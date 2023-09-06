@@ -1,27 +1,90 @@
+/* Media query - Ikke gjort ennå! VIKTIG!*/
+
+@media (max-width:767px) {}
+
+@media (min-width:768px) {}
+
+@media (min-width:992px) {}
+
+@media (min-width:1200px) {}
+
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #454545;
+    box-shadow: inset 0 0 10px black;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8c0101;
+}
+
+/* Shared Assets */
+
 body{
     background-color: rgb(0, 0, 0);
+    height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: demon;
+    scrollbar-color: dark;
+}
+.div{
+    border: 2px solid black;
+}
+#divider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: demon;
+    font-size: 18px;
+    background-color: black;
+    box-shadow: 0 0 100px black;
+    color: aliceblue;
+    text-align: center;
+    margin: 0%;
+    width: 100%;
+    height: 100px;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
 }
 @font-face {
     font-family: demon;
     src: url(OldLondon.ttf);
 }
-.div{
-    border: 2px solid black;
+.img{
+    max-width: 50%;
+    max-height: 500px;
+    min-width: 10%;
+    min-height: 10%;
+    border-radius: 5%;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    border: 3px solid black;
 }
-#body-1{
+a{
+    color: red;
+}
+/* Header */
+
+#Header{
     background-image:
-    linear-gradient(to bottom, #ffffff85, #840000e5),
-    url('background1.jpg');
+    linear-gradient(to bottom, #00000038, #44000043),
+    url('images/background1.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: auto;
     min-width: 100%;
 }
-#header{
+#header-1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,16 +99,16 @@ body{
 
 }
 #logo-2{
-    width: 180px;
-    height: 180px;
+    width: 20vh;
+    height: 100%;
 }
-.name{
+.title{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#name-2{
-    max-width: 500px;
+#title-2{
+    max-width: 50vh;
     max-height: 100%;
 }
 .nav{
@@ -57,44 +120,41 @@ body{
 .btn{
     padding: 5px 10px;
     width: 100px; height: 25px;
-    border-radius: 20px;
     font-weight: 700;
-    background-color: #f0f8ff33;
-    box-shadow: 0 0 5px rgb(0, 0, 0);
-    border: 1px solid black;
+    color: aliceblue;
+    background-color: #0000007e;
+    box-shadow: 0 0 0px rgb(0, 0, 0);
+    border: none;
     margin: 0px 20px 20px 20px;
+    transition: background 0.05s linear;
+    transition: all .05s linear;
 }
 .btn:hover{
-    background-color: #bb56568f;
-    box-shadow: 0 0 5px #930303;
+    background-color: #ffffffab;
+    box-shadow: 0 0 5px #ffffff;
+    color: black;
 }
-#about-2{
-    display: block;
+.btn:active{
+    box-shadow: 2px 2px 2px #777;
+    transform: translateY(3px);
 }
-#divider-1{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-font-family: demon;
-font-size: 20px;
-background-color: black;
-box-shadow: 0 0 100px black;
-color: aliceblue;
-text-align: center;
-margin: 0%;
-width: 100%;
-height: 100px;
-}
-#container-background{
+
+/* Container 1 */
+
+#container-background-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     background-image:
-    linear-gradient(to bottom, #23010127, #000000a1),
-    url('background2.jpg');
-    background-position: center;
+    linear-gradient(to bottom, #0600291f, #000000 70%),
+    url('images/background2.jpg');
     background-size: 100%;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: auto;
-    min-width: 100%;
+    height: 700px;
+    width: 100%;
 }
 .container-1{
     display: flex;
@@ -104,38 +164,36 @@ height: 100px;
     height: 700px;
     width: 100%;
 }
-.img-1{
-    max-width: 50%;
-    max-height: 500px;
-    min-width: 10%;
-    min-height: 10%;
-    border-radius: 5%;
-    box-shadow: 0 0 30px rgb(0, 0, 0);
-    border: 3px solid black;
-}
 .text-box{
     display:block;
     text-shadow: 0 0 10px black;
+    text-shadow: 0 0 20px rgba(98, 98, 98, 0.577);
     color: aliceblue;
     font-size: 28px;
-    width: 300px;
-    height: 500px;
+    width: 20%;
+    height: 100%;
 }
 .text-box-h2{
     text-align: center;
+}
+
+/* Container 2 */
+
+#container-background-2{
+    background-image:
+    linear-gradient(to bottom, #4b1f0027, #000000 70%),
+    url('images/background3.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 #container-2{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image:
-    linear-gradient(to bottom, #23010127, #000000a1),
-    url('background3.jpg');
-    background-position: center;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    flex-direction: column;
     height: 700px;
     width: 100%;
 }
@@ -147,19 +205,26 @@ height: 100px;
     width: 380px;
     height: 500px;
 }
-#container-3-background{
+#dis{
+    margin: 0%;
+    color: rgba(245, 245, 245, 0.507);
+}
+
+/* Container 3 */
+
+#container-background-3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-image:
-    linear-gradient(to bottom, #23010127, #000000a1),
-    url('background4.jpg');
+    linear-gradient(to bottom, #0600291f, #000000 70%),
+    url('images/background4.jpg');
     background-size: 100%;
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 700px;
     width: 100%;
 }
 .container-3{
@@ -170,7 +235,39 @@ height: 100px;
 .text-box-3{
     display: block;
     max-width: 50%;
+    min-width: 10%;
     text-shadow: 0 0 10px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: 25px;
+}
+
+/* Container 4 */
+
+#container-background-4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image:
+    linear-gradient(to bottom, #0600291f, #000000 70%),
+    url('images/background5.jpg');
+    background-size: 100%;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+}
+#container-4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text-box-4{
+    display: block;
+    max-width: 40%;
+    min-width: 5%;
+    text-shadow: 0 0 15px rgb(30, 5, 5);
+    color: rgb(188, 0, 0);
+    font-size: 25px;
 }

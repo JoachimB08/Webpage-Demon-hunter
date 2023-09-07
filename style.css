@@ -1,14 +1,6 @@
 /* Media query - Ikke gjort ennå! VIKTIG!*/
 
-@media (min-width: 576px) {
-    #Header {
-        background-image: url(images/Phone/background-1-phone.jpg);
-    }
-    .btn{
-        font-size: small;
-    }
 
-}
 
 
 
@@ -74,7 +66,7 @@ a{
 #Header{
     background-image:
     linear-gradient(to bottom, #00000038, #44000043),
-    url('images/Phone/background-1-phone.jpg');
+    url('images/background1.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -119,6 +111,7 @@ a{
 }
 .btn{
     padding: 5px 10px;
+    font-family: demon;
     min-width: 5vw;
     max-width: 20vw;
     max-height: auto;
@@ -129,7 +122,7 @@ a{
     background-color: #0000007e;
     box-shadow: 0 0 0px rgb(0, 0, 0);
     border: none;
-    border-radius: 5%;
+    border-radius: 25%;
     transition: background 0.05s linear;
     transition: all .05s linear;
 }
@@ -153,11 +146,8 @@ margin: 0%;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image:
-    linear-gradient(to bottom, #0600291f, #000000 70%),
-    url('images/Phone/background-2-phone.jpg');
+    background-position: center;
     background-size: cover;
-    background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -196,9 +186,6 @@ margin: 0%;
 /* Container 2 */
 
 #container-background-2{
-    background-image:
-    linear-gradient(to bottom, #4b1f0027, #000000 70%),
-    url('images/background3.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -246,9 +233,6 @@ margin: 0%;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image:
-    linear-gradient(to bottom, #0600291f, #000000 70%),
-    url('images/background4.jpg');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -295,9 +279,6 @@ margin: 0%;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image:
-    linear-gradient(to bottom, #0600291f, #000000),
-    url('images/background5.jpg');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;

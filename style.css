@@ -31,7 +31,7 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: demon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     scrollbar-color: dark;
 }
 .div{
@@ -156,7 +156,7 @@ margin: 0%;
     width: 100%;
     margin: 3vw 3vw 3vw 3vw;
 }
-.text-box{
+.text-box-1{
     display:block;
     align-items: center;
     text-shadow: 0 0 10px black;

@@ -64,9 +64,6 @@ a{
 /* Header */
 
 #Header{
-    background-image:
-    linear-gradient(to bottom, #00000038, #44000043),
-    url('images/background1.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -287,18 +284,19 @@ margin: 0%;
 }
 #container-4{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .text-box-4{
     display:block;
     align-items: center;
+    text-shadow: 0 0 10px black;
     text-align: center;
-    text-shadow: 0 0 1px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgba(98, 98, 98, 0.577);
+    color: aliceblue;
     font-size: 2vw;
-    width: 40vw;
-    height: 40vw;
+    width: 50vw;
+    height: 100%;
 }
 .img-4{
     max-width: 50%;
